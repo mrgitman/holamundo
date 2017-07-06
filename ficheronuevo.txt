@@ -1,2 +1,2 @@
 fichero creado en el repositorio
-aqui va a pasar algo...
+aqui va a pasar algo... modificado en el repositorio para crear conflicto
