@@ -1,1 +1,2 @@
 fichero creado en el repositorio
+modificado en el repositorio para crear conflicto
