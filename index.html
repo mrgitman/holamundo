@@ -2,80 +2,96 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-	<title>Notas git</title>
+	<title>Notas Git</title>
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 </head>
 <body>
 
-<h1>Notas git</h1>
+<h1>Notas Git</h1>
 
 
-<h2>INICIAR REPOSITORIO EN LA CARPETA ACTUAL</h2>
+<h2>init</h2>
+<p>Crear un nuevo repositorio en la carpeta actual</p>
 <pre>
  git init
 </pre>
 <div class="clear"></div>
 
-<h2>CLONAR REPOSITORIO</h2>
+
+<h2>clone</h2>
+<p>Descargar un repositorio ya existente sobre la carpeta actual</p>
 <pre>
  git clone
 </pre>
-<hr/>
+<div class="clear"></div>
 
 
-<h2>DEFINIR REMOTE</h2>
+<h2>remote</h2>
+<p>Repositorios remotos</p>
 <pre>
  git remote add origin https://github.com/mrgitman/holamundo.git
 </pre>
-<hr/>
+<pre>
+ git remote -v
+</pre>
+<div class="clear"></div>
 
-<h2>AÑADIR FICHEROS AL STAGING INDEX</h2>
+<h2>add</h2>
+<p>Mueve al índice las modificaciones que hayamos hecho</p>
 <pre>
  git add <i>fichero</i>
+</pre>
+<pre>
  git add --all
 </pre>
-<hr/>
+<div class="clear"></div>
 
 
-<h2>PARA VER EL ESTADO DEL STAGING INDEX</h2>
+<h2>status</h2>
+<p>Ver el estado de las modificaciones en el índice</p>
 <pre>
  git status
 </pre>
-<hr/>
+<div class="clear"></div>
 
-<h2>ACTUALIZAR CAMBIOS PARA SUBIR</h2>
+<h2>commit</h2>
+<p>Ejecuta los cambios añadidos con add</p>
 <pre>
  git commit -am "<i>comentario</i>"
 </pre>
-<hr/>
+<div class="clear"></div>
 
 
 
-<h2>CREAR RAMA</h2>
-<pre>
- git branch desarrollo
-</pre>
-<hr/>
-
-
-<h2>CAMBIAR DE RAMA</h2>
-<pre>
- git checkout desarrollo
-</pre>
-<hr/>
-
-
-
-<h2>VER RAMAS</h2>
+<h2>branch</h2>
+<p>Ver, crear y borrar ramas</p>
 <pre>
  git branch
 </pre>
-<hr/>
+<pre>
+ git branch <i>nombre-rama</i>
+</pre>
+<pre>
+ git branch -d <i>nombre-rama</i>
+</pre>
+<div class="clear"></div>
+
+
+<div class="clear"></div>
+
+
+<h2>checkout</h2>
+<p>Cambiar de rama</p>
+<pre>
+ git checkout <i>nombre-rama</i>
+</pre>
+<div class="clear"></div>
 
 
 
 
-<h2>SUBIR AL SERVIDOR (CAMBIOS O RAMAS)</h2>
+<h2>push</h2>
+<p>Envía los cambios al servidor</p>
 <pre>
  git push
 </pre>
@@ -83,44 +99,37 @@
  git push -u origin master
 </pre>
 <pre>
- git push -u origin desarrollo
+ git push -u origin <i>nombre-rama</i>
 </pre>
-<hr/>
+<div class="clear"></div>
 
 
-<h2>MERGE AL MASTER DESDE OTRA RAMA</h2>
+<h2>merge</h2>
+<p>Combinar cambios al master desde otra rama</p>
 <pre>
  git checkout master
- git merge desarrollo
+ git merge <i>nombre-rama</i>
 </pre>
-<hr/>
-
-
-
-<h2>BORRAR RAMA</h2>
-<pre>
- git branch -d desarrollo
-</pre>
-<hr/>
+<div class="clear"></div>
 
 
 
 
-
-<h2>DESCARGAR CAMBIOS DESDE EL SERVIDOR</h2>
+<h2>pull</h2>
+<p>Descargar cambios desde el servidor</p>
 <pre>
  git pull
 </pre>
-<hr/>
+<div class="clear"></div>
 
 
-<h2>DESCARTAR CAMBIOS LOCALES Y DESCARGAR TODO DESDE EL SERVIDOR</h2>
+<h2>fetch y reset</h2>
+<p>Descartar cambios locales y descargar todo otra vez desde el servidor</p>
 <pre>
  git fetch origin
  git reset --hard origin/master
 </pre>
-<hr/>
-
+<div class="clear"></div>
 
 
 </body>
