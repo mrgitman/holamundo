@@ -1,83 +1,105 @@
-<html>
+<!doctype html>
+<html lang="es">
 <head>
-	<title>hola mundo</title>
+<meta charset="utf-8">
+	<title>Notas git</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 </head>
 <body>
+
 <h1>Notas git</h1>
 
 
-<strong>INICIAR REPOSITORIO EN LA CARPETA ACTUAL</strong>
-<pre>git init</pre>
-<hr/>
-
-<strong>CLONAR REPOSITORIO</strong>
-<pre>git clone</pre>
-<hr/>
-
-
-<strong>DEFINIR REMOTE</strong>
-<pre>git remote add origin https://github.com/mrgitman/holamundo.git</pre>
-<hr/>
-
-
-
-<strong>AÑADIR FICHEROS AL STAGING INDEX</strong>
-<pre>git add <i>fichero</i>
-git add --all
-</pre>
-<hr/>
-
-
-<strong>PARA VER EL ESTADO DEL STAGING INDEX</strong>
-<pre>git status</pre>
-<hr/>
-
-<strong>ACTUALIZAR CAMBIOS PARA SUBIR</strong>
-<pre>git commit -am "<i>comentario</i>"
-</pre>
-<hr/>
-
-
-
-<strong>CREAR RAMA</strong>
-<pre>git branch desarrollo</pre>
-<hr/>
-
-
-<strong>CAMBIAR DE RAMA</strong>
-<pre>git checkout desarrollo</pre>
-<hr/>
-
-
-
-<strong>VER RAMAS</strong>
-<pre>git branch</pre>
-<hr/>
-
-
-
-
-<strong>SUBIR AL SERVIDOR (CAMBIOS O RAMAS)</strong>
+<h2>INICIAR REPOSITORIO EN LA CARPETA ACTUAL</h2>
 <pre>
-git push
-git push -u origin master
-git push -u origin desarrollo
+ git init
 </pre>
-<hr/>
+<div class="clear"></div>
 
-
-
-<strong>MERGE AL MASTER DESDE OTRA RAMA</strong>
+<h2>CLONAR REPOSITORIO</h2>
 <pre>
-git checkout master
-git merge desarrollo
+ git clone
+</pre>
+<hr/>
+
+
+<h2>DEFINIR REMOTE</h2>
+<pre>
+ git remote add origin https://github.com/mrgitman/holamundo.git
+</pre>
+<hr/>
+
+<h2>AÑADIR FICHEROS AL STAGING INDEX</h2>
+<pre>
+ git add <i>fichero</i>
+ git add --all
+</pre>
+<hr/>
+
+
+<h2>PARA VER EL ESTADO DEL STAGING INDEX</h2>
+<pre>
+ git status
+</pre>
+<hr/>
+
+<h2>ACTUALIZAR CAMBIOS PARA SUBIR</h2>
+<pre>
+ git commit -am "<i>comentario</i>"
 </pre>
 <hr/>
 
 
 
-<strong>BORRAR RAMA</strong>
-<pre>git branch -d desarrollo
+<h2>CREAR RAMA</h2>
+<pre>
+ git branch desarrollo
+</pre>
+<hr/>
+
+
+<h2>CAMBIAR DE RAMA</h2>
+<pre>
+ git checkout desarrollo
+</pre>
+<hr/>
+
+
+
+<h2>VER RAMAS</h2>
+<pre>
+ git branch
+</pre>
+<hr/>
+
+
+
+
+<h2>SUBIR AL SERVIDOR (CAMBIOS O RAMAS)</h2>
+<pre>
+ git push
+</pre>
+<pre>
+ git push -u origin master
+</pre>
+<pre>
+ git push -u origin desarrollo
+</pre>
+<hr/>
+
+
+<h2>MERGE AL MASTER DESDE OTRA RAMA</h2>
+<pre>
+ git checkout master
+ git merge desarrollo
+</pre>
+<hr/>
+
+
+
+<h2>BORRAR RAMA</h2>
+<pre>
+ git branch -d desarrollo
 </pre>
 <hr/>
 
@@ -85,26 +107,21 @@ git merge desarrollo
 
 
 
-<strong>DESCARGAR CAMBIOS DESDE EL SERVIDOR</strong>
-<pre>git pull
+<h2>DESCARGAR CAMBIOS DESDE EL SERVIDOR</h2>
+<pre>
+ git pull
 </pre>
 <hr/>
 
 
-<strong>DESCARTAR CAMBIOS LOCALES Y DESCARGAR TODO DESDE EL SERVIDOR</strong>
-<pre>git fetch origin
-git reset --hard origin/master
-
+<h2>DESCARTAR CAMBIOS LOCALES Y DESCARGAR TODO DESDE EL SERVIDOR</h2>
+<pre>
+ git fetch origin
+ git reset --hard origin/master
 </pre>
 <hr/>
 
 
 
-
-
-
-
-
->>>>>>> desarrollo
 </body>
 </html>
