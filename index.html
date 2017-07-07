@@ -1,8 +1,109 @@
 <html>
 <head>
-	<title></title>
+	<title>notas git</title>
 </head>
 <body>
-<h1>hola mundo - desarrollo</h1>
+<h1>Notas git</h1>
+
+
+<strong>INICIAR REPOSITORIO EN LA CARPETA ACTUAL</strong>
+<pre>git init</pre>
+<hr/>
+
+<strong>CLONAR REPOSITORIO</strong>
+<pre>git clone</pre>
+<hr/>
+
+
+<strong>DEFINIR REMOTE</strong>
+<pre>git remote add origin https://github.com/mrgitman/holamundo.git</pre>
+<hr/>
+
+
+
+<strong>AÑADIR FICHEROS AL STAGING INDEX</strong>
+<pre>git add <i>fichero</i>
+git add --all
+</pre>
+<hr/>
+
+
+<strong>PARA VER EL ESTADO DEL STAGING INDEX</strong>
+<pre>git status</pre>
+<hr/>
+
+<strong>ACTUALIZAR CAMBIOS PARA SUBIR</strong>
+<pre>git commit -am "<i>comentario</i>"
+</pre>
+<hr/>
+
+
+
+<strong>CREAR RAMA</strong>
+<pre>git branch desarrollo</pre>
+<hr/>
+
+
+<strong>CAMBIAR DE RAMA</strong>
+<pre>git checkout desarrollo</pre>
+<hr/>
+
+
+
+<strong>VER RAMAS</strong>
+<pre>git branch</pre>
+<hr/>
+
+
+
+
+<strong>SUBIR AL SERVIDOR (CAMBIOS O RAMAS)</strong>
+<pre>
+git push
+git push -u origin master
+git push -u origin desarrollo
+</pre>
+<hr/>
+
+
+
+<strong>MERGE AL MASTER DESDE OTRA RAMA</strong>
+<pre>
+git branch master
+git merge desarrollo
+</pre>
+<hr/>
+
+
+
+<strong>BORRAR RAMA</strong>
+<pre>git branch -d desarrollo
+</pre>
+<hr/>
+
+
+
+
+
+<strong>DESCARGAR CAMBIOS DESDE EL SERVIDOR</strong>
+<pre>git pull
+</pre>
+<hr/>
+
+
+<strong>DESCARTAR CAMBIOS LOCALES Y DESCARGAR TODO DESDE EL SERVIDOR</strong>
+<pre>git fetch origin
+git reset --hard origin/master
+
+</pre>
+<hr/>
+
+
+
+
+
+
+
+
 </body>
 </html>
